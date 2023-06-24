@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizon Law Group</title>
+    <link href="index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  </head>
+
+  <body>
+    <div class="homepage">
+      <div>
+        <img id="cible" src="Assets/cibler.png" />
+      </div>
+
+      <div id="brown"></div>
+
+      <header>
+        <span>Horizon <b>Law Group</b><span>.</span></span>
+
+        <nav>
+          <nav-link><a href="index.html">Main</a></nav-link>
+          <nav-link><a href="services.html">Services</a></nav-link>
+          <nav-link><a href="about.html">About</a></nav-link>
+          <nav-link><a href="faq.html">FAQ</a></nav-link>
+          <nav-link><a href="contact.html">Contact</a></nav-link>
+        </nav>
+
+        <button>
+          <a href="contact.html"
+            ><img src="Assets/combine.png" /> Book a Call</a
+          >
+        </button>
+      </header>
+
+      <main>
+        <img src="Assets/img1.jpg" />
+
+        <h1>/ Horizon</h1>
+
+        <section>
+          <b>Guiding you </b>through <br />legal complexities <br />
+          with<span> experience and <br />compassion</span>
+          <p>
+            We are committed to providing compassionate and effective legal<br />
+            representation to our clients.
+          </p>
+        </section>
+
+        <section class="top10">
+          <div>
+            <img src="Assets/TOP10.jpg" />
+            <p>
+              <b>ATTORNEY 2023</b> <br />
+              <span>Client satisfaction</span>
+            </p>
+          </div>
+        </section>
+
+        <form id="login" onsubmit="process(event)">
+          <label for="phone">Request a Call :</label><br />
+          <input id="phone" type="tel" name="phone" size="20" />
+
+          <img src="Assets/fleche-droite.png" />
+        </form>
+        <div class="alert alert-info" style="display: none"></div>
+      </main>
+
+      <section class="services">
+        <h2>Services <span>we provide</span></h2>
+
+        <article>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-briefcase"
+            viewbox="0 0 16 16"
+          >
+            <path
+              d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"
+            />
+          </svg>
+          <h3>Corporate Legal Services</h3>
+          <p>
+            Business rights, relations, and <br />
+            conduct of personas to ensure <br />
+            legal compliace and standing. <br />
+          </p>
+        </article>
+
+        <article>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-people"
+            viewbox="0 0 16 16"
+          >
+            <path
+              d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"
+            />
+          </svg>
+          <h3>Family Law</h3>
+          <p>
+            Family relationships, including <br />
+            marriage and divorce, the <br />
+            treatment of children, and <br />
+            related economic matters.
+          </p>
+        </article>
+
+        <article>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-percent"
+            viewbox="0 0 16 16"
+          >
+            <path
+              d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"
+            />
+          </svg>
+          <h3>Financial services</h3>
+          <p>
+            Submission of tax returns, <br />
+            Accounting supervision and <br />
+            monitoring, Management of <br />
+            accounting software.
+          </p>
+        </article>
+      </section>
+
+      <section class="about">
+        <div id="company">
+          <img src="Assets/img2.jpg" />
+          <h4>About <br /><b>the Company</b></h4>
+        </div>
+        <div class="container">
+          <div class="icons">
+            <img src="Assets/Linkedin-04.jpg" />
+            <img src="Assets/Twitter-circled-01.jpg" />
+          </div>
+
+          <p>
+            <span>Our experienced team of lawyers </span> specializes in
+            providing legal guidance and representation in a wide range of legal
+            matters, including divorce, child custody, business formation,
+            contract negociations, mergers and acquisitions, and much more.
+          </p>
+          <p>
+            At our firm,
+            <span
+              >we understand that legal issues can be complex and emotionally
+              challenging.</span
+            >
+            That's why we approach every case with compassion, empathy, and a
+            commitment to achieving the best possible outcome for our clients.
+            We believe in taking a collaborative approach to legal
+            problem-solving , working closely with our clients to understand
+            their unique needs and goals.
+          </p>
+          <p><b>Continue reading </b><img src="Assets/fleche-droite.png" /></p>
+          <br />
+        </div>
+      </section>
+      <!-- play 
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-play-btn-fill"
+        viewbox="0 0 16 16"
+      >
+        <path
+          d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+        />
+      </svg>
+      -->
+
+      <section class="cases">
+        <div>
+          <h4>Corporate Law Cases</h4>
+          <p>100+</p>
+        </div>
+        <div>
+          <h4>Family Law Cases</h4>
+          <p>80+</p>
+        </div>
+        <div>
+          <h4>Financial Consultations</h4>
+          <p>40+</p>
+        </div>
+      </section>
+
+      <section class="posts">
+        <article>
+          <img src="Assets/img4.jpg" />
+          <div>
+            <h5>
+              Disputed Inheritance : Siblings Battle Over Multi-Million Dollar
+              Estate
+            </h5>
+            <p>6 mn read</p>
+          </div>
+          <div class="beginning">
+            <p>
+              In this case study, a former employee alleges that they were
+              subjected to discrimination and retaliation in the workplace due
+              to their race and gender. The employee...
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <img src="Assets/img3.jpg" />
+          <div>
+            <h5>
+              Lost in Translation : A Case of Misinterpreted Contract Language
+            </h5>
+            <p>14 mn read</p>
+          </div>
+          <div class="beginning">
+            <p>
+              Management, they claim that no action was taken to address the
+              issue. When the employee continued to push for change...
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <img src="Assets/img5.jpg" />
+          <div>
+            <h5>
+              Breaking Point : A Case of Workplace Discrimination and
+              Retaliation
+            </h5>
+            <p>6 mn read</p>
+          </div>
+          <div class="beginning">
+            <p>
+              A former employee sues their former employer for discrimation and
+              retaliation. The plaintiff alleges that they were subjected to
+              discriminatory...
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <div id="allcases">
+        <p>All cases <img src="Assets/fleche-droite.png" /></p>
+      </div>
+    </div>
+
+    <!-- 
+      <script src="script.js"></script>
+    -->
+  </body>
+
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+
+    const info = document.querySelector(".alert-info");
+
+    function process(event) {
+      event.preventDefault();
+
+      const phoneNumber = phoneInput.getNumber();
+
+      info.style.display = "";
+      info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+    }
+  </script>
+</html>
