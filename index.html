@@ -260,29 +260,112 @@
       <div id="allcases">
         <p>All cases <img src="Assets/fleche-droite.png" /></p>
       </div>
+
+      <section class="reviews">
+        <div id="clients">
+          <h5>
+            What clients say<br /><span><b>About us</b></span>
+          </h5>
+        </div>
+        <div id="avis">
+          <article>
+            <div class="title">
+              <img src="Assets/profil2.jpg" />
+              <h6>Thomas Odoy</h6>
+              <span>CEO Co-founder of Lorem</span>
+            </div>
+            <p>
+              I had the pleasure of working with this law firm and was impressed
+              with their professionalism and expertise. <br />
+              They took the time to listen to my concerns and provided me with
+              clear and concise legal advice that helped me navigate a complex
+              legal situation.
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewbox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                />
+              </svg>
+              4.6
+            </p>
+          </article>
+          <article>
+            <div class="title">
+              <img src="Assets/profil1.jpg" />
+              <h6>Laura Morphling</h6>
+              <span>U.S Citizen</span>
+            </div>
+            <p>
+              I had the pleasure of working with this law firm and was impressed
+              with their professionalism and expertise.
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewbox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                />
+              </svg>
+              4.8
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <div id="faq">
+        <h5>FAQ</h5>
+        <aside>
+          <p>What types of legal sevices does your firm offer ?</p>
+          <hr />
+          <p>How do I schedule a consultation with a lawyer at your firm ?</p>
+          <hr />
+          <p>What should I bring with me to my initial consultation ?</p>
+          <hr />
+          <p>How much do your legal services cost ?</p>
+          <hr />
+        </aside>
+      </div>
+
+      <footer>
+        <h5>Anything else ?<br /><span>Contact us</span></h5>
+
+        <form>
+          <div class="container">
+            <input type="text" placeholder="Your email" />
+            <input type="text" placeholder="Subject" />
+          </div>
+          <textarea placeholder="We are listening carefully..."></textarea>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewbox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </form>
+      </footer>
     </div>
 
-    <!-- 
-      <script src="script.js"></script>
-    -->
+    <script src="script.js"></script>
   </body>
-
-  <script>
-    const phoneInputField = document.querySelector("#phone");
-    const phoneInput = window.intlTelInput(phoneInputField, {
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
-
-    const info = document.querySelector(".alert-info");
-
-    function process(event) {
-      event.preventDefault();
-
-      const phoneNumber = phoneInput.getNumber();
-
-      info.style.display = "";
-      info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
-    }
-  </script>
 </html>

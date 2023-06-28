@@ -7,25 +7,20 @@ $light-color: rgb(217, 197, 155);
 $dark-color: rgb(172, 135, 54);
 $descriptionsandlinks: rgb(152, 136, 136);
 
+html,
 body {
   background-color: $light-color;
+  width: 100vw;
 }
-/*
-#root {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-*/
+
 .homepage {
   background-color: white;
   width: 80vw;
-  padding: 5%;
+  max-height: max-content;
+  padding: 3%;
   border-radius: 10px;
-  margin-right: 4%;
-  margin-left: 4%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 4%;
   background-repeat: no-repeat;
 
@@ -247,10 +242,10 @@ main {
 
 .about {
   background-color: black;
-  width: 112%;
+  width: 108%;
   margin-top: 20%;
   position: relative;
-  margin-left: -6%;
+  margin-left: -4%;
 
   #company {
     h4 {
@@ -399,5 +394,159 @@ main {
     width: 20px;
     height: 20px;
     cursor: pointer;
+  }
+}
+
+.reviews {
+  background-color: black;
+  width: 108%;
+  height: 400px;
+  margin-top: 5%;
+  margin-left: -4%;
+  position: relative;
+  justify-content: space-evenly;
+
+  h5 {
+    font-size: 38px;
+    font-family: "Abhaya Libre", serif;
+    color: whitesmoke;
+    margin-left: 3%;
+    padding-top: 10%;
+    font-weight: 100;
+
+    span {
+      color: $dark-color;
+      font-weight: 900;
+    }
+  }
+
+  #avis {
+    margin-top: -22%;
+    display: inline-flex;
+    margin-left: 28%;
+    padding: 5%;
+    position: absolute;
+    justify-content: space-evenly;
+
+    article {
+      background-color: rgb(54, 54, 52);
+      width: 350px;
+      height: 250px;
+      padding-top: 5px;
+      padding-left: 2%;
+      display: inline-flex;
+      flex-direction: column;
+      margin: 2%;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 2%;
+        position: absolute;
+      }
+
+      h6 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 2px;
+        margin-top: 8%;
+        color: white;
+        margin-left: 20%;
+      }
+
+      span {
+        font-size: 12px;
+        color: white;
+        font-weight: 300;
+        margin-left: 20%;
+      }
+
+      p {
+        font-size: 13px;
+        font-weight: 100;
+        color: $descriptionsandlinks;
+      }
+    }
+  }
+}
+
+#faq {
+  font-family: "Abhaya Libre", serif;
+  padding-top: 8%;
+  padding-bottom: 8%;
+
+  h5 {
+    font-size: 48px;
+    color: $dark-color;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  hr {
+    color: $descriptionsandlinks;
+  }
+}
+
+footer {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(30, 30, 30, 0.747),
+      rgba(2, 2, 2, 0.73)
+    ),
+    url(Assets/justice.jpg);
+  background-size: cover;
+  object-fit: cover;
+  width: 108%;
+  height: 350px;
+  margin-top: 5%;
+  margin-left: -4%;
+  position: relative;
+  margin-bottom: -50px;
+  border-radius: 0 0 10px 10px;
+
+  h5 {
+    font-size: 38px;
+    font-family: "Abhaya Libre", serif;
+    color: whitesmoke;
+    margin-left: 3%;
+    padding-top: 6%;
+    font-weight: 100;
+
+    span {
+      color: $dark-color;
+      font-weight: 900;
+    }
+  }
+
+  form {
+    margin-left: 50%;
+    margin-top: -12%;
+
+    input,
+    textarea {
+      font-size: 12px;
+      margin: 4px;
+      padding: 15px;
+      color: whitesmoke;
+      background-color: rgb(54, 54, 52);
+      border: none;
+      width: 170px;
+    }
+
+    textarea {
+      width: 380px;
+      height: 100px;
+    }
+
+    svg {
+      margin-left: -45px;
+      color: whitesmoke;
+    }
   }
 }
