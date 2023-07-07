@@ -13,7 +13,7 @@ body {
   width: 100vw;
 }
 
-.homepage {
+#homepage {
   background-color: white;
   width: 80vw;
   max-height: max-content;
@@ -253,7 +253,7 @@ main {
       font-weight: 400;
       color: whitesmoke;
       font-family: "Abhaya Libre", serif;
-      margin-left: 6%;
+      margin-left: 8%;
       margin-top: -25%;
       position: absolute;
     }
@@ -262,7 +262,7 @@ main {
       width: 400px;
       height: 300px;
       object-fit: cover;
-      margin-left: 5%;
+      margin-left: -2%;
       margin-top: -5%;
       position: relative;
     }
@@ -549,4 +549,17 @@ footer {
       color: whitesmoke;
     }
   }
+}
+
+.vignets {
+  opacity: 1;
+
+  -webkit-transition: opacity 3s ease-in;
+  -moz-transition: opacity 3s ease-in;
+  -o-transition: opacity 3s ease-in;
+  -ms-transition: opacity 3s ease-in;
+  transition: opacity 3s ease-in;
+}
+.vignets.load {
+  opacity: 4;
 }
